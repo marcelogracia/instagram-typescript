@@ -1,28 +1,24 @@
 import React from 'react';
 import './App.css';
 
-import Card from './components/Card'
-import Container from './components/Container'
-import Input from './components/Input'
-import Button from './components/Button'
-import Title from './components/Title'
-import Link from './components/Link'
-import Center from './components/Center'
+import Login from './containers/Auth/Login'
+import Register from './containers/Auth/Register'
+
+// import { Route } from 'react-router'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App: React.FC = () => {
   return (
-    <Container>
-      <Card>  
-        <Title>Iniciar Sesión</Title>
-        <Input label="Correo" placeholder="Correo"/>
-        <Input label="Password" placeholder="Password"/>
-        <Button block={true}>Enviar</Button>
-        <Center>
-          <Link>Registrarse</Link>
-        </Center>
-      </Card>
-    </Container>
     
+    <div>
+      <Router>
+        <Switch>
+          <Route exact={true} path="/" component={Login} />
+          <Route exact={true} path="/register" component={Register} />  
+        </Switch>
+      </Router>
+      
+    </div>
   );
 }
 
