@@ -11,7 +11,7 @@ import Center from '../../components/Center'
 class Login extends Component {
     render() {
         return (
-            <Container>
+            <Container center={true}>
                 <Card>  
                     <Title>Registro</Title>
                     <Input label="Correo" placeholder="Correo"/>
