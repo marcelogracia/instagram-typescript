@@ -14,12 +14,12 @@ const App: React.FC = () => {
     
     <div>
       <Router>
-        <Switch>
+        
           <Route exact={true} path="/" component={Login} />
           <Route exact={true} path="/register" component={Register} />  
           <Route path="/app" component={NavBar} />  
           <Route exact={true} path="/app/newsfeed" component={NewsFeed} /> 
-        </Switch>
+        
       </Router>
       
     </div>

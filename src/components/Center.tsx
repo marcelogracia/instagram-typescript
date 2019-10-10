@@ -5,6 +5,7 @@ const style = {
     textAlign : 'center'
 
 } as React.CSSProperties
+
 class Center extends Component {
     render() {
         return (
