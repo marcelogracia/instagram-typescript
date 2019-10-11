@@ -19,9 +19,9 @@ class NavBar extends Component {
         return (
             <div style={style.navbar}>
                 <Link to='/app/newsfeed' >
-                <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>Post</Link>
+                <FontAwesomeIcon icon={faNewspaper}></FontAwesomeIcon>Instacool</Link>
                 <div style={{float:'right'}}>
-                <Link style={style.link} to='/app/profile' ><FontAwesomeIcon icon={faUser} />Perfil</Link>
+                    <Link style={style.link} to='/app/profile' ><FontAwesomeIcon icon={faUser} />Perfil</Link>
                 </div>
             </div>
         );
